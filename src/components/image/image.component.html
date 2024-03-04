@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="container__text-wrapper container__title">
+        <p>{{ image.title }}</p>
+    </div>
+    <div class="container__preview-wrapper">
+        <img [src]="image.url" [alt]="image.title" class="container__preview">
+    </div>
+    <div class="container__text-wrapper container__date">
+        <p>{{ image.date | date: format }}</p>
+    </div>
+</div>

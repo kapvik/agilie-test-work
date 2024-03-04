@@ -1,0 +1,9 @@
+<mat-form-field class="form-field">
+    <mat-label>Search for...</mat-label>
+    <input matInput type="text" [(ngModel)]="query" (keydown.enter)="handleSubmit()">
+    @if (query) {
+      <button matSuffix mat-icon-button aria-label="Clear" (click)="handleClear()">
+        <mat-icon>close</mat-icon>
+      </button>
+    }
+</mat-form-field>
